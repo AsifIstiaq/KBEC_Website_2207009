@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Font of the website */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+/* image in background */
+.hero_background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Content inside hero */
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 1.4rem;
+  margin-bottom: 25px;
+}
+
+/* Buttons */
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn {
+  padding: 16px 28px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.3s ease;
+}
+
+/* Primary Button */
+.primary-btn {
+  background-color: #ff6b00;
+  color: white;
+}
+
+.primary-btn:hover {
+  background-color: #e55a00;
+}
+
+/* Secondary Button */
+.secondary-btn {
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.secondary-btn:hover {
+  background-color: #fff;
+  color: #000;
+}
