@@ -16,10 +16,65 @@
 
         <div class="hero-buttons">
           <a href="form.html" class="btn primary-btn">Join Us</a>
-          <a href="#" class="btn secondary-btn">Learn More</a>
+          <a href="#activities" class="btn secondary-btn">Learn More</a>
         </div>
       </div>
     </section>
     <!-- Hero Section End -->
+    <!-- Activities Section Start -->
+    <section id="activities" class="activities">
+      <h2>Our Activities & Events</h2>
+
+      <div class="slider">
+        <!-- Slide 1 -->
+        <div class="slide active">
+          <img src="tedxEvent.jpg" alt="tedx" />
+          <div class="slide-content">
+            <h3>TED x KUET</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum cupiditate quas, laudantium voluptas fugiat commodi sit
+              debitis placeat aut corporis impedit ipsa sed rerum nam? Eligendi
+              officiis voluptatum facilis illo.
+            </p>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="slide">
+          <img src="nexusEvent.jpg" alt="nexus" />
+          <div class="slide-content">
+            <h3>KBEC Nexus : A National Biz-Tech Case Competition</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+              et ipsa atque qui ipsum magnam molestias cum debitis consectetur
+              totam, dolorum hic voluptate iure! Excepturi placeat aperiam
+              nostrum quidem natus?
+            </p>
+          </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+      </div>
+    </section>
+    <!-- Activities Section End -->
+    <script>
+      let slides = document.querySelectorAll(".slide");
+      let index = 0;
+
+      document.querySelector(".next").onclick = function () {
+        slides[index].classList.remove("active");
+        index = (index + 1) % slides.length;
+        slides[index].classList.add("active");
+      };
+
+      document.querySelector(".prev").onclick = function () {
+        slides[index].classList.remove("active");
+        index = (index - 1 + slides.length) % slides.length;
+        slides[index].classList.add("active");
+      };
+    </script>
   </body>
 </html>
