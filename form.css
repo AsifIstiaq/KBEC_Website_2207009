@@ -140,10 +140,45 @@ button {
   transition: all 0.3s ease;
 }
 
+/* Summary Box (process.php) */
+.summary {
+  margin-top: 20px;
+  padding: 20px;
+  background: #f1f5f9;
+  border-radius: 10px;
+}
+
 /* Button Hover */
 button:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(255, 107, 0, 0.4);
+}
+
+/* Each Row */
+.row {
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+
+.row span {
+  font-weight: bold;
+  color: #1e3c72;
+}
+
+/* Back Button */
+.back-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: #2a5298;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.back-btn:hover {
+  background: #1e3c72;
 }
 
 /* Responsive */
