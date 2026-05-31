@@ -24,8 +24,8 @@
       <div class="checkbox-group">
         <label>
           <input type="checkbox" name="remember">
-          Remember Me
         </label>
+        <div>Remember Me</div>
       </div>
 
       <button type="submit">Login</button>

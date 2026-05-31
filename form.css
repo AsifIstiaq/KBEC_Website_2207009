@@ -96,17 +96,10 @@ input[type="range"] {
 /* Radio Group Container */
 .checkbox-group {
   display: flex;
-  gap: 25px;
-  margin-top: 10px;
-}
-
-/* Label Styling */
-.checkbox-group label {
-  display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 16px;
+  margin-top: 10px;
   font-size: 1rem;
-  cursor: pointer;
   color: #333;
 }
 

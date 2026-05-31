@@ -54,6 +54,7 @@ $result = $conn->query("SELECT * FROM members");
           <th>Roll</th>
           <th>Gender</th>
           <th>Skill</th>
+          <th>Actions</th>
         </tr>
 
         <?php while($row = $result->fetch_assoc()) { ?>
@@ -67,6 +68,18 @@ $result = $conn->query("SELECT * FROM members");
           <td><?= $row['roll']; ?></td>
           <td><?= $row['gender']; ?></td>
           <td><?= $row['skill']; ?></td>
+          <td>
+            <div class="action-buttons">
+              <a class="edit-btn" href="edit_member.php?id=<?= $row['id']; ?>">
+                Edit
+              </a>
+
+              <a class="delete-btn" href="delete_member.php?id=<?= $row['id']; ?>"
+                onclick="return confirm('Are you sure you want to delete this member?')">
+                Delete
+              </a>
+            </div>
+          </td>
         </tr>
 
         <?php } ?>
