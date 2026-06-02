@@ -251,3 +251,37 @@ html {
     gap: 30px;
   }
 }
+
+/* View All Events CTA Section */
+.view-all-events-cta {
+  background-color: #0f172a;
+  padding: 60px 20px;
+  text-align: center;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+
+.cta-container h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.cta-container p {
+  font-size: 1.1rem;
+  color: #fff;
+  margin-bottom: 25px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Fallback button scaling if not defined globally */
+.view-all-events-cta .btn {
+  display: inline-block;
+  padding: 12px 30px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
