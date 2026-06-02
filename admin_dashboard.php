@@ -38,6 +38,16 @@ $result = $conn->query("SELECT * FROM members");
 
     </div>
 
+    <div class="dashboard-section">
+
+      <h2>Events Management</h2>
+
+      <a href="events_admin.php" class="submit-btn">
+        Manage Events
+      </a>
+
+    </div>
+
     <!-- Table Section -->
     <div class="table-card">
 
@@ -87,41 +97,6 @@ $result = $conn->query("SELECT * FROM members");
       </table>
 
     </div>
-
-    <div class="dashboard-section">
-
-      <h2>Add New Event</h2>
-
-      <?php
-if(isset($_GET['success'])){
-    echo "<div class='success-message'>
-            Event added successfully!
-          </div>";
-}
-?>
-
-      <form action="add_event.php" method="POST" enctype="multipart/form-data" class="event-form">
-
-        <label>Event Title</label>
-        <input type="text" name="title" required>
-
-        <label>Event Date</label>
-        <input type="date" name="event_date" required>
-
-        <label>Event Image</label>
-        <input type="file" name="image" accept="image/*" required>
-
-        <label>Event Description</label>
-        <textarea name="description" rows="6" required></textarea>
-
-        <button type="submit" class="submit-btn">
-          Add Event
-        </button>
-
-      </form>
-
-    </div>
-
 
   </div>
 
