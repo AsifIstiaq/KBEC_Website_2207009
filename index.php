@@ -15,8 +15,33 @@ $events = $conn->query(" SELECT * FROM events ORDER BY event_date DESC "); ?>
 </head>
 
 <body>
+  <!-- Navigation Bar Start -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <a href="#">KBEC</a>
+      </div>
+
+      <!-- Hamburger Button -->
+      <div class="hamburger" id="hamburger">
+        ☰
+      </div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#">Home</a></li>
+        <li><a href="#activities">Activities</a></li>
+        <li><a href="#">Sponsors</a></li>
+        <li><a href="#">Club Partners</a></li>
+        <li><a href="#">Alumni</a></li>
+        <li><a href="#">Executive Panel</a></li>
+        <li><a href="#">Faculty Advisors</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Navigation Bar End -->
   <!-- Hero Section Start -->
-  <section class="hero">
+  <section class="hero" id="home">
     <img class="hero_background" src="hero_background.jpg" alt="" />
     <div class="hero-content">
       <div><img src="kbeclogo.svg" alt="" /></div>
@@ -104,7 +129,7 @@ $events = $conn->query(" SELECT * FROM events ORDER BY event_date DESC "); ?>
     </div>
   </section>
   <!-- Footer Section Start -->
-  <footer class="footer">
+  <footer class="footer" id="contact">
     <div class="footer-container">
       <!-- Club Info -->
       <div class="footer-section">
@@ -146,6 +171,14 @@ $events = $conn->query(" SELECT * FROM events ORDER BY event_date DESC "); ?>
     </div>
   </footer>
   <!-- Footer Section End -->
+  <script>
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("navLinks");
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+  </script>
 </body>
 
 </html>
