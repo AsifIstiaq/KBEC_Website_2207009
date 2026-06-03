@@ -39,13 +39,13 @@ $result = $conn->query("SELECT * FROM members");
     </div>
 
     <div class="dashboard-section">
-
-      <h2>Events Management</h2>
-
+      <h2>Management Section</h2>
       <a href="events_admin.php" class="submit-btn">
-        Manage Events
+        Events
       </a>
-
+      <a href="manage_sponsors.php" class="submit-btn">
+        Sponsors
+      </a>
     </div>
 
     <!-- Table Section -->

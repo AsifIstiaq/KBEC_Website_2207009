@@ -432,7 +432,7 @@ html {
 }
 
 .logo a {
-  color: #e55a00;
+  color: #ff6b00;
   font-size: 1.5rem;
   font-weight: bold;
   text-decoration: none;
@@ -503,5 +503,63 @@ html {
   .join-btn {
     margin: 10px;
     text-align: center;
+  }
+}
+
+/* Sponsors Section */
+
+.sponsors-section {
+  padding: 80px 0;
+  background: #0f172a;
+  overflow: hidden;
+}
+
+.sponsors-section h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 2rem;
+  color: #f8fafc;
+}
+
+.sponsors-slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.sponsors-track {
+  display: flex;
+  gap: 40px;
+  width: max-content;
+  animation: sponsorScroll 20s linear infinite;
+}
+
+.sponsor-card {
+  min-width: 220px;
+  background: #cbd5e1;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.sponsor-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.sponsor-card h3 {
+  font-size: 1rem;
+  color: #0f172a;
+}
+
+@keyframes sponsorScroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
   }
 }

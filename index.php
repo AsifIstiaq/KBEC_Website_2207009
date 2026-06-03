@@ -2,7 +2,8 @@
 $conn = new mysqli("localhost:4406", "root", "", "kbec_db");
 
 if ($conn->connect_error) { die("Connection failed: " . $conn->connect_error); }
-$events = $conn->query(" SELECT * FROM events ORDER BY event_date DESC "); ?>
+$events = $conn->query(" SELECT * FROM events ORDER BY event_date DESC ");
+$sponsors = $conn->query("SELECT * FROM sponsors");?>
 
 <!doctype html>
 <html lang="en">
@@ -30,7 +31,7 @@ $events = $conn->query(" SELECT * FROM events ORDER BY event_date DESC "); ?>
       <ul class="nav-links" id="navLinks">
         <li><a href="#">Home</a></li>
         <li><a href="#activities">Activities</a></li>
-        <li><a href="#">Sponsors</a></li>
+        <li><a href="#sponsors">Sponsors</a></li>
         <li><a href="#">Club Partners</a></li>
         <li><a href="#">Alumni</a></li>
         <li><a href="#">Executive Panel</a></li>
@@ -127,6 +128,52 @@ $events = $conn->query(" SELECT * FROM events ORDER BY event_date DESC "); ?>
       </p>
       <a href="events.php" class="btn primary-btn">View All Events</a>
     </div>
+  </section>
+  <!-- Sponsors Section Start -->
+  <section class="sponsors-section" id="sponsors">
+
+    <h2>Our Sponsors</h2>
+
+    <div class="sponsors-slider">
+
+      <div class="sponsors-track">
+
+        <?php while($sponsor = $sponsors->fetch_assoc()) { ?>
+
+        <div class="sponsor-card">
+
+          <img src="uploads/sponsors/<?= $sponsor['logo']; ?>" alt="<?= htmlspecialchars($sponsor['title']); ?>">
+
+          <h3>
+            <?= htmlspecialchars($sponsor['title']); ?>
+          </h3>
+
+        </div>
+
+        <?php } ?>
+
+        <?php
+            mysqli_data_seek($sponsors,0);
+
+            while($sponsor = $sponsors->fetch_assoc()) {
+            ?>
+
+        <div class="sponsor-card">
+
+          <img src="uploads/sponsors/<?= $sponsor['logo']; ?>" alt="<?= htmlspecialchars($sponsor['title']); ?>">
+
+          <h3>
+            <?= htmlspecialchars($sponsor['title']); ?>
+          </h3>
+
+        </div>
+
+        <?php } ?>
+
+      </div>
+
+    </div>
+    <!-- Sponsors Section End -->
   </section>
   <!-- Footer Section Start -->
   <footer class="footer" id="contact">
