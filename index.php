@@ -3,7 +3,8 @@ $conn = new mysqli("localhost:4406", "root", "", "kbec_db");
 
 if ($conn->connect_error) { die("Connection failed: " . $conn->connect_error); }
 $events = $conn->query(" SELECT * FROM events ORDER BY event_date DESC ");
-$sponsors = $conn->query("SELECT * FROM sponsors");?>
+$sponsors = $conn->query("SELECT * FROM sponsors");
+$partners = $conn->query("SELECT * FROM club_partners");?>
 
 <!doctype html>
 <html lang="en">
@@ -32,7 +33,7 @@ $sponsors = $conn->query("SELECT * FROM sponsors");?>
         <li><a href="#">Home</a></li>
         <li><a href="#activities">Activities</a></li>
         <li><a href="#sponsors">Sponsors</a></li>
-        <li><a href="#">Club Partners</a></li>
+        <li><a href="#club_partners">Club Partners</a></li>
         <li><a href="#">Alumni</a></li>
         <li><a href="#">Executive Panel</a></li>
         <li><a href="#">Faculty Advisors</a></li>
@@ -131,50 +132,39 @@ $sponsors = $conn->query("SELECT * FROM sponsors");?>
   </section>
   <!-- Sponsors Section Start -->
   <section class="sponsors-section" id="sponsors">
-
     <h2>Our Sponsors</h2>
-
     <div class="sponsors-slider">
-
       <div class="sponsors-track">
-
         <?php while($sponsor = $sponsors->fetch_assoc()) { ?>
-
         <div class="sponsor-card">
-
           <img src="uploads/sponsors/<?= $sponsor['logo']; ?>" alt="<?= htmlspecialchars($sponsor['title']); ?>">
-
           <h3>
             <?= htmlspecialchars($sponsor['title']); ?>
           </h3>
-
         </div>
-
         <?php } ?>
-
-        <?php
-            mysqli_data_seek($sponsors,0);
-
-            while($sponsor = $sponsors->fetch_assoc()) {
-            ?>
-
-        <div class="sponsor-card">
-
-          <img src="uploads/sponsors/<?= $sponsor['logo']; ?>" alt="<?= htmlspecialchars($sponsor['title']); ?>">
-
-          <h3>
-            <?= htmlspecialchars($sponsor['title']); ?>
-          </h3>
-
-        </div>
-
-        <?php } ?>
-
       </div>
 
     </div>
     <!-- Sponsors Section End -->
   </section>
+  <!-- Club Partners Start -->
+  <section class="partners-section" id="club_partners">
+    <h2>Club Partners</h2>
+    <div class="partners-slider">
+      <div class="partners-track">
+        <?php while($partner = $partners->fetch_assoc()) { ?>
+        <div class="partner-card">
+          <img src="uploads/club_partners/<?= $partner['logo']; ?>" alt="<?= htmlspecialchars($partner['title']); ?>">
+          <h3>
+            <?= htmlspecialchars($partner['title']); ?>
+          </h3>
+        </div>
+        <?php } ?>
+      </div>
+    </div>
+  </section>
+  <!-- Club Partners End -->
   <!-- Footer Section Start -->
   <footer class="footer" id="contact">
     <div class="footer-container">

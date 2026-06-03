@@ -46,6 +46,9 @@ $result = $conn->query("SELECT * FROM members");
       <a href="manage_sponsors.php" class="submit-btn">
         Sponsors
       </a>
+      <a href="manage_partners.php" class="submit-btn">
+        Club Partners
+      </a>
     </div>
 
     <!-- Table Section -->
