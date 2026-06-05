@@ -35,7 +35,7 @@ $partners = $conn->query("SELECT * FROM club_partners");?>
         <li><a href="#sponsors">Sponsors</a></li>
         <li><a href="#club_partners">Club Partners</a></li>
         <li><a href="alumni.php">Alumni</a></li>
-        <li><a href="#">Executive Panel</a></li>
+        <li><a href="executive_panel.php">Executive Panel</a></li>
         <li><a href="#">Faculty Advisors</a></li>
         <li><a href="#contact">Contact Us</a></li>
       </ul>
