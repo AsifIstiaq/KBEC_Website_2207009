@@ -36,7 +36,7 @@ $partners = $conn->query("SELECT * FROM club_partners");?>
         <li><a href="#club_partners">Club Partners</a></li>
         <li><a href="alumni.php">Alumni</a></li>
         <li><a href="executive_panel.php">Executive Panel</a></li>
-        <li><a href="#">Faculty Advisors</a></li>
+        <li><a href="faculty_advisors.php">Faculty Advisors</a></li>
         <li><a href="#contact">Contact Us</a></li>
       </ul>
     </div>
@@ -193,9 +193,9 @@ $partners = $conn->query("SELECT * FROM club_partners");?>
       <div class="footer-section">
         <h3>Contact Us</h3>
 
-        <p>Email: kbec@kuet.ac.bd</p>
-        <p>Location: KUET, Khulna, Bangladesh</p>
-        <p>Phone: +880 1XXXXXXXXX</p>
+        <p>Email: kbec.kuet@gmail.com</p>
+        <p>Location: SWC-302, Students Welfare Center, KUET</p>
+        <p>Phone: +880 1822 076 101</p>
       </div>
     </div>
 

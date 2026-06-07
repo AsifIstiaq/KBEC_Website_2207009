@@ -727,7 +727,8 @@ table tr:hover {
 
 .sponsor-form input[type="text"],
 .sponsor-form input[type="file"],
-.sponsor-form input[type="url"] {
+.sponsor-form input[type="url"],
+.sponsor-form textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #d1d5db;
@@ -739,7 +740,8 @@ table tr:hover {
 
 .sponsor-form input[type="text"]:focus,
 .sponsor-form input[type="file"]:focus,
-.sponsor-form input[type="url"]:focus {
+.sponsor-form input[type="url"]:focus,
+.sponsor-form textarea:focus {
   border-color: #1e3c72;
 }
 

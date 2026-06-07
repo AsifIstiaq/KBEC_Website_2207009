@@ -55,6 +55,9 @@ $result = $conn->query("SELECT * FROM members");
       <a href="manage_executives.php" class="submit-btn">
         Executive Panel
       </a>
+      <a href="manage_faculty.php" class="submit-btn">
+        Faculty Advisors
+      </a>
     </div>
 
     <!-- Table Section -->
