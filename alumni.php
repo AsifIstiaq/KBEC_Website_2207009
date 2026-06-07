@@ -19,6 +19,7 @@ $result = $conn->query(
 <head>
   <title>KBEC Alumni</title>
   <link rel="stylesheet" href="alumni.css">
+  <link rel="stylesheet" href="footer.css" />
 </head>
 
 <body>
@@ -72,6 +73,8 @@ $result = $conn->query(
     </div>
 
   </section>
+
+  <?php include 'footer.php'; ?>
 
 </body>
 

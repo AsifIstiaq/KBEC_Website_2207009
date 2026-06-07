@@ -19,6 +19,7 @@ $result = $conn->query(
 <head>
   <title>Executive Panel</title>
   <link rel="stylesheet" href="alumni.css">
+  <link rel="stylesheet" href="footer.css" />
 </head>
 
 <body>
@@ -70,6 +71,8 @@ $result = $conn->query(
     </div>
 
   </section>
+
+  <?php include 'footer.php'; ?>
 
 </body>
 

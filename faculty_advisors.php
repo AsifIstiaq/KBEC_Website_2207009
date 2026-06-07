@@ -19,6 +19,7 @@ $result = $conn->query(
 <head>
   <title>Faculty Advisors</title>
   <link rel="stylesheet" href="faculty_advisors.css">
+  <link rel="stylesheet" href="footer.css" />
 </head>
 
 <body>
@@ -73,6 +74,8 @@ $result = $conn->query(
   </section>
 
   <?php } ?>
+
+  <?php include 'footer.php'; ?>
 
 </body>
 
