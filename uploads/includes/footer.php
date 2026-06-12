@@ -18,7 +18,7 @@
         <li><a href="index.php">Home</a></li>
         <li><a href="events.php">Activities</a></li>
         <li><a href="form.php">Join Us</a></li>
-        <li><a href="admin_login.php">Admin</a></li>
+        <li><a href="../../admin/admin_login.php">Admin</a></li>
       </ul>
     </div>
 

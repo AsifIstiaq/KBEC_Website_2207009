@@ -23,6 +23,7 @@ body {
   padding: 60px 20px;
   overflow: hidden;
   margin-top: 64px;
+  border-bottom: 2px solid #000;
 }
 
 /* Background image */
@@ -436,6 +437,7 @@ html {
   padding: 80px 0;
   background: #0f172a;
   overflow: hidden;
+  border-bottom: 2px solid #000;
 }
 
 .sponsors-section h2 {
@@ -494,6 +496,7 @@ html {
   padding: 80px 0;
   background: #0f172a;
   overflow: hidden;
+  border-bottom: 2px solid #000;
 }
 
 .partners-section h2 {
