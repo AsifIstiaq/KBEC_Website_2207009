@@ -10,6 +10,9 @@
 
 <body>
   <div class="container">
+    <a href="index.php" class="back-btn">
+      Back
+    </a>
     <h1>Join KBEC</h1>
     <p>Fill out the form to become a member</p>
 

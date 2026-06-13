@@ -46,6 +46,10 @@ if (!$alumni) {
 
 <body>
 
+  <a href="manage_alumni.php" class="logout-btn">
+    Back
+  </a>
+
   <form class="sponsor-form" action="update_alumni.php" method="POST" enctype="multipart/form-data">
 
     <input type="hidden" name="id" value="<?= $alumni['id']; ?>">

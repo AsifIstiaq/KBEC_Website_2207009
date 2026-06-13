@@ -42,6 +42,10 @@ if (!$sponsor) {
 
 <body>
 
+  <a href="manage_sponsors.php" class="logout-btn">
+    Back
+  </a>
+
   <div class="edit-container">
 
     <h2>Edit Sponsor</h2>

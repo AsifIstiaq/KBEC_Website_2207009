@@ -30,6 +30,10 @@ $result = $conn->query(
 
 <body>
 
+  <a href="../admin_dashboard.php" class="logout-btn">
+    Back
+  </a>
+
   <div class="page-container">
 
     <div class="page-header">

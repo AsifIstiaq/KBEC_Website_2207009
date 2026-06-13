@@ -32,6 +32,10 @@ if(!$event){
 
 <body>
 
+  <a href="events_admin.php" class="logout-btn">
+    Back
+  </a>
+
   <div class="dashboard-container">
 
     <div class="edit-event">

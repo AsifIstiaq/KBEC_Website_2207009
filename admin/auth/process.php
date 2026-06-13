@@ -53,6 +53,7 @@ $conn->close();
 <body>
 
   <div class="container">
+
     <h1>🎉 Application Submitted</h1>
     <p>Thank you for applying to KBEC. Your information has been stored successfully.</p>
 
@@ -70,7 +71,10 @@ $conn->close();
 
     </div>
 
-    <a href="../../pages/form.php" class="back-btn">← Submit Another Response</a>
+    <a href="../../pages/form.php" class="submit_back-btn">← Submit Another Response</a>
+    <a href="../../pages/index.php" class="back-btn">
+      Home
+    </a>
   </div>
 
 </body>

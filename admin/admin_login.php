@@ -11,6 +11,7 @@
 <body>
 
   <div class="container">
+
     <h1>Admin Login</h1>
 
     <form action="auth/login_process.php" method="POST">

@@ -9,7 +9,12 @@
 
 <body>
 
+  <a href="manage_sponsors.php" class="logout-btn">
+    Back
+  </a>
+
   <form action="insert_sponsor.php" method="POST" enctype="multipart/form-data" class="sponsor-form">
+
     <h2 style="text-align:center; color:#1e3c72; margin-bottom:20px;">
       Add New Sponsor
     </h2>

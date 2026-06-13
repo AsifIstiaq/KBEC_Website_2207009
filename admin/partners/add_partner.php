@@ -8,6 +8,10 @@
 
 <body>
 
+  <a href="manage_partners.php" class="logout-btn">
+    Back
+  </a>
+
   <form class="sponsor-form" action="insert_partner.php" method="POST" enctype="multipart/form-data">
 
     <h2 style="text-align:center; color:#1e3c72; margin-bottom:20px;">

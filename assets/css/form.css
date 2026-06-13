@@ -161,9 +161,8 @@ button:hover {
 /* Back Button */
 .back-btn {
   display: inline-block;
-  margin-top: 20px;
   padding: 12px 20px;
-  background: #2a5298;
+  background: #ef4444;
   color: white;
   text-decoration: none;
   border-radius: 6px;
@@ -171,7 +170,22 @@ button:hover {
 }
 
 .back-btn:hover {
+  background: #dc2626;
+}
+
+.submit_back-btn {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 12px 20px;
   background: #1e3c72;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.submit_back-btn:hover {
+  background: #172f5b;
 }
 
 /* Responsive */

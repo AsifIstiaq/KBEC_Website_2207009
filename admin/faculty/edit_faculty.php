@@ -37,6 +37,9 @@ $faculty = $result->fetch_assoc();
 </head>
 
 <body>
+  <a href="manage_faculty.php" class="logout-btn">
+    Back
+  </a>
 
   <form class="sponsor-form" action="update_faculty.php" method="POST" enctype="multipart/form-data">
 

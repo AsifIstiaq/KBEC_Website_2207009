@@ -22,6 +22,10 @@ $result = $conn->query("SELECT * FROM sponsors ORDER BY id DESC");
 
 <body>
 
+  <a href="../admin_dashboard.php" class="logout-btn">
+    Back
+  </a>
+
   <div class="page-container">
 
     <div class="page-header">

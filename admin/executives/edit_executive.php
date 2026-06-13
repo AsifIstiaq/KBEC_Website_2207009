@@ -38,6 +38,10 @@ $executive = $result->fetch_assoc();
 
 <body>
 
+  <a href="manage_executives.php" class="logout-btn">
+    Back
+  </a>
+
   <form class="sponsor-form" action="update_executive.php" method="POST" enctype="multipart/form-data">
 
     <input type="hidden" name="id" value="<?= $executive['id']; ?>">
