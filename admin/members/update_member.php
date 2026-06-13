@@ -17,6 +17,8 @@ $department = $_POST['department'];
 $roll = $_POST['roll'];
 $gender = $_POST['gender'];
 $skill = $_POST['skill'];
+$interest = $_POST['interest'];
+$experience = $_POST['experience'];
 
 $sql = "
 UPDATE members
@@ -27,7 +29,9 @@ phone='$phone',
 department='$department',
 roll='$roll',
 gender='$gender',
-skill='$skill'
+skill='$skill',
+interest='$interest',
+experience='$experience'
 WHERE id=$id
 ";
 

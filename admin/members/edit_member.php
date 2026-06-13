@@ -56,6 +56,12 @@ $row = $result->fetch_assoc();
       <label>Skill</label>
       <input type="text" name="skill" value="<?= htmlspecialchars($row['skill']); ?>">
 
+      <label>Interest</label>
+      <input type="text" name="interest" value="<?= htmlspecialchars($row['interest']); ?>">
+
+      <label>Experience</label>
+      <input type="text" name="experience" value="<?= htmlspecialchars($row['experience']); ?>">
+
       <button type="submit">
         Update Member
       </button>

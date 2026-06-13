@@ -76,6 +76,8 @@ $result = $conn->query("SELECT * FROM members");
           <th>Roll</th>
           <th>Gender</th>
           <th>Skill</th>
+          <th>Interest</th>
+          <th>Experience</th>
           <th>Actions</th>
         </tr>
 
@@ -90,6 +92,8 @@ $result = $conn->query("SELECT * FROM members");
           <td><?= $row['roll']; ?></td>
           <td><?= $row['gender']; ?></td>
           <td><?= $row['skill']; ?></td>
+          <td><?= $row['interest']; ?></td>
+          <td><?= $row['experience']; ?></td>
           <td>
             <div class="action-buttons">
               <a class="edit-btn" href="members/edit_member.php?id=<?= $row['id']; ?>">
