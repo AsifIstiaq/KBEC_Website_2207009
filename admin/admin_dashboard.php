@@ -95,7 +95,7 @@ $result = $conn->query("SELECT * FROM members");
               <a class="edit-btn" href="members/edit_member.php?id=<?= $row['id']; ?>">
                 Edit
               </a>
-              <a class="delete-btn" href="members/delete_member.php?= $row['id']; ?>"
+              <a class="delete-btn" href="members/delete_member.php?id=<?= $row['id']; ?>"
                 onclick="return confirm('Are you sure you want to delete this member?')">
                 Delete
               </a>
